@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     queryParams = Object.assign({}, queryParams, { query: parameters.query, variables: parameters.variables, onEditQuery: onEditQuery, onEditVariables: onEditVariables });
   }
 
-  ReactDOM.render(
+  window.graphiQLShowComponent = ReactDOM.render(
     React.createElement(GraphiQL, element_props,
       React.createElement(GraphiQL.Logo, {}, graphiqlContainer.dataset.logo)
     ),
